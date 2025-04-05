@@ -3,7 +3,7 @@ const fs = require('fs').promises;
 
 // Configuration
 const SIM_API_BASE_URL = 'https://sim.api.nexalo.xyz/v1/train';
-const SIM_API_KEY = 'MAINPOINT'; // Replace with your actual API key
+const SIM_API_KEY = 'YOUR_API'; // Replace with your actual API key
 const LANGUAGE = 'bn'; // Bangla language code
 
 // File paths
@@ -56,7 +56,10 @@ async function trainSimApi(data) {
 
     try {
         const response = await axios.post(SIM_API_BASE_URL, payload, {
-            headers: { 'Content-Type': 'application/json' }
+            headers: {
+                'Content-Type': 'application/json',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            }
         });
         const result = response.data;
 
@@ -70,7 +73,9 @@ async function trainSimApi(data) {
             return false;
         }
     } catch (error) {
-        await log(`API request failed for '${payload.question}': ${error.message}`);
+        const status = error.response?.status || 'No status';
+        const responseData = error.response?.data || error.message;
+        await log(`API request failed for '${payload.question}': Status: ${status} | Response: ${typeof responseData === 'string' ? responseData.slice(0, 200) : JSON.stringify(responseData)}`);
         return false;
     }
 }
