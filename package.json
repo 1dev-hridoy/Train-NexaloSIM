@@ -1,13 +1,16 @@
 {
   "name": "bulk-train-sim",
   "version": "1.0.0",
-  "description": "Bulk training script for Nexalo SIM API",
+  "description": "Bulk training script for Nexalo SIM API with styled console",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "axios": "^1.6.8"
+    "axios": "^1.6.8",
+    "chalk": "^4.1.2",
+    "gradient-string": "^2.0.2",
+    "progress": "^2.0.3"
   },
   "engines": {
     "node": ">=16.0.0"
