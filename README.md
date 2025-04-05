@@ -26,8 +26,8 @@ To use this project, you need an API key from Nexalo. Follow these steps:
 
 - **Sign Up**: Go to [Nexalo Dashboard](https://nexalo.xyz/dashboard/sign-up). Create an account by filling out the registration form.
 - **Sign In**: After signing up, log in to your Nexalo account.
-- **Create an API Key**: Navigate to [Nexalo API](https://nexalo.xyz/dashboard/api). Click on "Create API" or a similar option. Enter a project name (e.g., "BulkTrainSim") and generate the API key. Copy the API key provided (it will look something like `MAINPOINT` or a unique string).
-- **Use the API Key**: Open your code editor (e.g., VS Code). In the `index.js` file, replace the `SIM_API_KEY` value (`'MAINPOINT'`) with your copied API key. **Do not share it in chat or public forums.**
+- **Create an API Key**: Navigate to [Nexalo API](https://nexalo.xyz/dashboard/api). Click on "Create API" or a similar option. Enter a project name (e.g., "BulkTrainSim") and generate the API key. Copy the API key provided (it will look something like `YOUR_API` or a unique string).
+- **Use the API Key**: Open your code editor (e.g., VS Code). In the `index.js` file, replace the `SIM_API_KEY` value (`'YOUR_API'`) with your copied API key. **Do not share it in chat or public forums.**
 
 ### 2. Clone the Repository
 
@@ -134,7 +134,7 @@ Logs are also saved to `training_log.txt`.
 Edit `index.js` to customize:
 
 - **SIM_API_BASE_URL**: Default is `'https://sim.api.nexalo.xyz/v1/train'`. Change if your API endpoint differs.
-- **SIM_API_KEY**: Replace `'MAINPOINT'` with your Nexalo API key.
+- **SIM_API_KEY**: Replace `'YOUR_API'` with your Nexalo API key.
 - **LANGUAGE**: Default is `'bn'` (Bangla). Adjust as needed (e.g., `'en'`, `'hi'`).
 - **JSON_FILE_PATH**: Path to your JSON file (default: `'training_data.json'`).
 - **LOG_FILE_PATH**: Path to the log file (default: `'training_log.txt'`).
