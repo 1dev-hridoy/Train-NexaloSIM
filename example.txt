@@ -1,0 +1,28 @@
+    {
+        "question": "i love you",
+        "answer": "bhalo onek",
+        "response_type": "text",
+        "language": "bn",
+        "sentiment": "neutral",
+        "category": "general",
+        "response": "",
+        "type": "good"
+    },
+
+
+
+------------------------------------------------------
+
+
+    {
+        "question": "Ki dekho?",
+        "answer": "",
+        "response_type": "image",
+        "language": "bn",
+        "sentiment": "neutral",
+        "category": "visual",
+        "response": "",
+        "type": "good",
+        "image_url": "url here"
+    },
+

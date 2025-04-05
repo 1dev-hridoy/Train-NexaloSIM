@@ -1,0 +1,33 @@
+[
+    {
+        "question": "Kemon aco?",
+        "answer": "Bhalo achi.",
+        "response_type": "text",
+        "language": "bn",
+        "sentiment": "positive",
+        "category": "greeting",
+        "response": "Bhalo achi.",
+        "type": "good"
+    },
+    {
+        "question": "Ki dekho?",
+        "answer": "",
+        "response_type": "image",
+        "language": "bn",
+        "sentiment": "neutral",
+        "category": "visual",
+        "response": "",
+        "type": "good",
+        "image_url": "https://example.com/image.jpg"
+    },
+    {
+        "question": "Ki korcho?",
+        "answer": "Kaj korchi.",
+        "response_type": "text",
+        "language": "bn",
+        "sentiment": "neutral",
+        "category": "activity",
+        "response": "Kaj korchi.",
+        "type": "good"
+    }
+]
